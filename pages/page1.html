@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 1 - Aventura</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+  </head>
+  <body style="text-align: center; margin-top: 10px; max-width: 800px; margin-left: auto; margin-right: auto; font-family: Arial, sans-serif;">
+    <h1>Filme 1 - Aventura</h1>
+    <h2>Adivinhe o filme com base na descrição abaixo:</h2>
+    <p style="font-size: large;">Um adolescente comum vê sua vida virar de cabeça para baixo quando um excêntrico cientista o convida para uma viagem... no tempo. Com um carro que nunca mais será visto da mesma forma, ele precisa garantir que seus pais se apaixonem ou ele deixará de existir.</p>
+    <h3>Qual é o filme?</h3>
+
+    <!-- Sessão das opoções de resposta -->
+    <ul id="opoções" style="list-style-type: none; padding: 0; display: block;">
+      <li><button onclick="showCorrectAnswer()" style="padding: 10px 20px; margin: 10px 0; font-size: 24px; background-color: lightblue; border-radius: 50px; cursor: pointer;">Os Caça-Fantasmas</button></li>
+      <li><button onclick="showCorrectAnswer()" style="padding: 10px 20px; margin: 10px 0; font-size: 24px; background-color: lightblue; border-radius: 50px; cursor: pointer;">Curtindo a Vida Adoidado</button></li>
+      <li><button onclick="showCorrectAnswer()" style="padding: 10px 20px; margin: 10px 0; font-size: 24px; background-color: lightblue; border-radius: 50px; cursor: pointer;">Os Garotos Perdidos</button></li>
+      <li><button onclick="showCorrectAnswer()" style="padding: 10px 20px; margin: 10px 0; font-size: 24px; background-color: lightblue; border-radius: 50px; cursor: pointer;">De Volta para o Futuro</button></li>
+    </ul>
+
+    <!-- Sessão da resposta -->
+    <div id="correctAnswer" style="display: none;">
+      <img src="https://uauposters.com.br/media/catalog/product/3/2/322320211103-uau-posters-filmes-back-to-the-future-de-volta-para-o-futuro.jpg"
+        alt="Resposta correta De Volta para o Futuro"
+        style="width: 300px; display: block; margin: 0 auto;"
+        >
+      <button onclick="location.href='../index.html'" style="padding: 10px 20px; margin: 10px 0; font-size: 24px; background-color: gainsboro; border-radius: 50px; cursor: pointer;">
+        Volta para o início
+      </button>
+      <button onclick="location.href='page2.html'" style="padding: 10px 20px; margin: 10px 0; font-size: 24px; background-color: green; border-radius: 50px; color: white; cursor: pointer;">
+        Ir para próximo filme
+      </button>
+    </div>
+
+    <script>
+      // Função para exibir a resposta correta
+      function showCorrectAnswer() {
+        document.getElementById('correctAnswer').style.display = 'block';
+        document.getElementById('opoções').style.display = 'none';
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 2 - Ação</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+  </head>
+  <body style="text-align: center; margin-top: 10px; max-width: 800px; margin-left: auto; margin-right: auto; font-family: Arial, sans-serif;">
+    <h1>Filme 2 - Ação</h1>
+    <h2>Adivinhe o filme com base na descrição abaixo:</h2>
+    <p style="font-size: large;">Um futuro sombrio, onde máquinas dominam o mundo e mandam um assassino quase indestrutível ao passado para impedir o nascimento de seu maior inimigo. A missão? Proteger um garoto que ainda nem entende o que está por vir. Desta vez, o vilão virou herói, com óculos escuros e frases que entraram para a história.</p>
+    <h3>Qual é o filme?</h3>
+
+    <!-- Sessão das opoções de resposta -->
+    <ul id="opoções" style="list-style-type: none; padding: 0; display: block;">
+      <li><button onclick="showCorrectAnswer()" style="padding: 10px 20px; margin: 10px 0; font-size: 24px; background-color: lightblue; border-radius: 50px; cursor: pointer;">Robocop</button></li>
+      <li><button onclick="showCorrectAnswer()" style="padding: 10px 20px; margin: 10px 0; font-size: 24px; background-color: lightblue; border-radius: 50px; cursor: pointer;">O Vingador do Futuro</button></li>
+      <li><button onclick="showCorrectAnswer()" style="padding: 10px 20px; margin: 10px 0; font-size: 24px; background-color: lightblue; border-radius: 50px; cursor: pointer;">Alien - O Oitavo Passageiro</button></li>
+      <li><button onclick="showCorrectAnswer()" style="padding: 10px 20px; margin: 10px 0; font-size: 24px; background-color: lightblue; border-radius: 50px; cursor: pointer;">O Exterminador do Futuro 2: O Julgamento Final</button></li>
+    </ul>
+
+    <!-- Sessão da resposta -->
+    <div id="correctAnswer" style="display: none;">
+      <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/8/85/Terminator2poster.jpg/250px-Terminator2poster.jpg"
+        alt="Resposta correta O Exterminador do Futuro 2: O Julgamento Final"
+        style="width: 300px; display: block; margin: 0 auto;"
+        >
+      <button onclick="location.href='../index.html'" style="padding: 10px 20px; margin: 10px 0; font-size: 24px; background-color: gainsboro; border-radius: 50px; cursor: pointer;">
+        Volta para o início
+      </button>
+      <button onclick="location.href='page3.html'" style="padding: 10px 20px; margin: 10px 0; font-size: 24px; background-color: green; border-radius: 50px; color: white; cursor: pointer;">
+        Ir para próximo filme
+      </button>
+    </div>
+
+    <script>
+      // Função para exibir a resposta correta
+      function showCorrectAnswer() {
+        document.getElementById('correctAnswer').style.display = 'block';
+        document.getElementById('opoções').style.display = 'none';
+      }
+    </script>
+  </body>
+</html>
