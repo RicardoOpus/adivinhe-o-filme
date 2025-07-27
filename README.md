@@ -22,6 +22,17 @@ Após o clique em uma resposta, a **lista de opções deve ser ocultada**, e o *
 
 ---
 
+# Lista de melhorias (exercícios):
+
+- [x] Melhoria 1 - Acrescentar mais 5 páginas com novos gêneros.
+- [] Melhoria 2 - Informar se o usuário acertou ou errou a resposta.
+- [] Melhoria 3 - Criar uma tela final com a pontuação total.
+- [] Melhoria 4 - Exibir uma mensagem personalizada na tela final.
+- [] Melhoria 5 - Exibir miniaturas dos pôsteres dos 10 filmes na tela final.
+- [] Melhoria 6 - Adicionar uma contagem regressiva de 60 segundos em cada pergunta.
+
+---
+
 ## Melhorias Propostas
 
 ### Melhoria 1
